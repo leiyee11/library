@@ -1,0 +1,21 @@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Author</th>
+            <th scope="col">Publisher</th>
+        </tr>
+    </thead>
+    <tbody  *ngFor="let book of allBooks">
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.genre }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.publisher }}</td>
+            <td> <a class="read" (click)="read(book._id)">Read Now</a> </td>
+            <!-- <td> <a class="delete" (click)="delete(product._id)">Delete</a> </td> -->
+        </tr>
+    </tbody>
+</table>
