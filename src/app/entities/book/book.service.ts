@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { BookModel } from './book.model';
+// import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -8,7 +10,10 @@ import { BookModel } from './book.model';
 export class BookService {
     private booksUrl = '/api/books';
 
-    constructor(private http: Http) { }
+    constructor(
+        private http: Http,
+        // private httpClient: HttpClient
+    ) { }
 
     // Get books
     getAllBook(): Promise<Array<BookModel>> {
@@ -18,21 +23,17 @@ export class BookService {
             .catch(this.error);
     }
 
-    // // Create product
-    // create(product: Product): Promise<IProduct> {
-    //     return this.http.post(this.productsUrl, product)
-    //         .toPromise()
-    //         .then(response => response.json())
-    //         .catch(this.error);
-    // }
 
-    //Read a product
     readBook(id: string): Promise<any> {
         console.log("readbook func>>",this.booksUrl)
         return this.http.get(`${this.booksUrl}/${id}`).toPromise()
             .then(response => response.json())
             .catch(this.error);
     }
+    // get(bookId: string): Observable<BookModel> {
+    //     const bookDetailsUrl = `${this.booksUrl}/${bookId}`;
+    //     return this.http.get<BookModel>(bookDetailsUrl);
+    // }
 
     // Error handling
     private error(error: any) {

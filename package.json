@@ -29,6 +29,7 @@
     "body-parser": "^1.19.1",
     "bootstrap": "^3.4.1",
     "express": "^4.17.1",
+    "httpclient": "^0.1.0",
     "mongodb": "^3.6.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

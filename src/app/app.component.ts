@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   createdProduct: IProduct = null;
   allBooks: BookModel = null;
   bookById: BookModel = null;
+  // book: Book = new Book();
   constructor(
     protected statusService: StatusService,
     protected bookService: BookService,
@@ -26,23 +27,28 @@ export class AppComponent implements OnInit {
     this.statusService
       .getStatus()
       .then((result: any) => {
-        console.log("status>>",result)
         this.status = result.status;
       });
 
     this.bookService
       .getAllBook()
       .then((result: any) => {
-        console.log("books>>",result)
         this.allBooks = result;
       });
+    
   }
 
-  // Get the new product created.
-  onCreatedProduct(createdProduct: IProduct) {
-    this.createdProduct = createdProduct;
-  }
+  
+  // searchBook(val){
+  //   const id = val;
 
+  //   this.bookService.get(id).subscribe(
+  //     data => {
+  //       this.bookById = data;
+  //       console.log("bookById>>",this.bookById)
+  //     }
+  //   );
+  // }
   searchBook(val){
     console.log("search val>>",val)
       if(val != null || val != ''){
