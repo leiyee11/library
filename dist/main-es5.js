@@ -160,7 +160,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, AppComponent);
 
         this.statusService = statusService;
-        this.title = 'node-express-angular';
+        this.title = 'Library';
         this.status = 'DOWN';
         this.createdProduct = null;
       } // Get the server status when starting the view.
@@ -204,7 +204,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Node-Express-Angular");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "library");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1276,7 +1276,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/shunleiyee/Documents/sly/node-express-angular/src/main.ts */
+    /*! /Users/shunleiyee/Documents/sly/library/src/main.ts */
     "./src/main.ts");
     /***/
   }
