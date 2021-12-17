@@ -9,13 +9,15 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BookListComponent } from './book/book-list/book-list.component';
+import { BookCreateComponent } from './book/book-create/book-create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductCreateComponent,
-    BookListComponent
+    BookListComponent,
+    BookCreateComponent
   ],
   imports: [
     BrowserModule,

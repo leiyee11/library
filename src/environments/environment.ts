@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   apiurl: '',
+  DB_URI: 'mongodb+srv://admin:admin@cluster02.wf7pc.mongodb.net/library?retryWrites=true&w=majority'
 };
 
 /*
