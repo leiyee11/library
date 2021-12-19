@@ -27,7 +27,8 @@ var distDir = __dirname + "/dist/";
 app.use(express.static(distDir));
 // Local database URI.
 const LOCAL_DATABASE = "mongodb://localhost:27017/app";
-const db = 'mongodb+srv://admin:admin@cluster02.wf7pc.mongodb.net/library?retryWrites=true&w=majority';
+const db = 'ib01.herokuapp.com';
+// const db = 'mongodb+srv://admin:admin@cluster02.wf7pc.mongodb.net/library?retryWrites=true&w=majority';
 // Local port.
 const LOCAL_PORT = 8080;
 // Init the server
